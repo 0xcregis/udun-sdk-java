@@ -32,3 +32,7 @@
 3. 具体用法参考 https://github.com/uduncloud/java-wallet-sdk/blob/main/src/test/java/UdunclientDemo.java
 4. 所有支持方法参考 https://github.com/uduncloud/java-wallet-sdk/blob/main/src/main/java/com/udun/sdk/client/UdunApi.java
 
+## 三、回调
+- 回调的写法参考 https://github.com/uduncloud/udun-sdk-java-demo/blob/main/src/main/java/com/udun/sdk/controller/CallBackController.java
+- [回调测试工具](https://www.uduncloud.com/debug-monitor) 
+

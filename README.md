@@ -15,9 +15,9 @@ pom文件中引入依赖:
 ```
 
 ### 2.2 使用`sdk`
-2.2.1. 具体用法参考 https://github.com/uduncloud/java-wallet-sdk/blob/main/src/test/java/UdunclientDemo.java
-2.2.2  所有支持方法参考 https://github.com/uduncloud/java-wallet-sdk/blob/main/src/main/java/com/udun/sdk/client/UdunApi.java
-2.2.3  示例项目 [udun-sdk-java-demo](https://github.com/uduncloud/udun-sdk-java-demo)
+1. 具体用法参考 https://github.com/uduncloud/java-wallet-sdk/blob/main/src/test/java/UdunclientDemo.java
+2. 所有支持方法参考 https://github.com/uduncloud/java-wallet-sdk/blob/main/src/main/java/com/udun/sdk/client/UdunApi.java
+3. 示例项目 [udun-sdk-java-demo](https://github.com/uduncloud/udun-sdk-java-demo)
 
 ## 三、关于回调
 - [回调接口参考写法](https://github.com/uduncloud/udun-sdk-java-demo/blob/main/src/main/java/com/udun/sdk/controller/CallBackController.java)

@@ -20,7 +20,7 @@
     <artifactId>udun-sdk-java</artifactId>
     <version>2.0.2</version>
     <scope>system</scope>
-    <systemPath>${project.basedir}/src/lib/udun-sdk-java-2.0.2.jar</systemPath>
+    <systemPath>${project.basedir}/src/lib/udun-sdk-java-xxx.jar</systemPath>
 </dependency>
 <dependency>
     <groupId>cn.hutool</groupId>

@@ -111,7 +111,7 @@ public class UdunClient implements UdunApi {
         params.put("merchantId", merchantId);
         params.put("mainCoinType", mainCoinType);
         params.put("address", address);
-        ResultMsg result = JSONUtil.toBean(UdunUtils.post(gateway, merchantKey, ApiPath.CHECK_ADDRESS, JSONUtil.toJsonStr(params)), ResultMsg.class);
+        ResultMsg result = JSONUtil.toBean(UdunUtils.post(gateway, merchantKey, ApiPath.CHECK_ADDRESS, StrUtil.format("[{}]", JSONUtil.toJsonStr(params))), ResultMsg.class);
         return result.getCode() == HttpStatus.HTTP_OK;
     }
 

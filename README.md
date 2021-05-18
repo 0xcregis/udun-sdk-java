@@ -8,7 +8,7 @@
 有两种方法
 
 1. 通过本项目自己打包
-2. 这里有打包好的`sdk`，[直接下载](https://github.com/uduncloud/java-wallet-sdk/releases/tag/v2.0.2)
+2. 这里有打包好的`sdk`，[直接下载](https://github.com/uduncloud/java-wallet-sdk/releases/download/v2.0.3/udun-sdk-java-2.0.3.jar)
 
 ### 2.2 使用`sdk`，参考 [udun-sdk-java-demo](https://github.com/uduncloud/udun-sdk-java-demo)
 1. 将`sdk`拷贝到项目中

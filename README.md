@@ -18,7 +18,7 @@
 <dependency>
     <groupId>com.udun</groupId>
     <artifactId>udun-sdk-java</artifactId>
-    <version>2.0.2</version>
+    <version>xxx</version>
     <scope>system</scope>
     <systemPath>${project.basedir}/src/lib/udun-sdk-java-xxx.jar</systemPath>
 </dependency>

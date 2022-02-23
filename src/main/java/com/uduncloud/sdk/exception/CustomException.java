@@ -1,4 +1,4 @@
-package com.udun.sdk.exception;
+package com.uduncloud.sdk.exception;
 
 public class CustomException extends RuntimeException {
     private Integer code;

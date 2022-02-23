@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.udun</groupId>
-    <artifactId>udun-sdk-java</artifactId>
-    <version>2.0.3</version>
+    <groupId>com.uduncloud</groupId>
+    <artifactId>udun-sdk</artifactId>
+    <version>2.1.0</version>
 
     <dependencies>
         <dependency>
@@ -24,7 +24,7 @@
         <repository>
             <id>github</id>
             <name>GitHub OWNER Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/uduncloud/java-wallet-sdk</url>
+            <url>https://maven.pkg.github.com/uduncloud/udun-sdk-java</url>
         </repository>
     </distributionManagement>
 

@@ -1,4 +1,4 @@
-package com.udun.sdk.util;
+package com.uduncloud.sdk.util;
 
 import cn.hutool.core.util.RandomUtil;
 import cn.hutool.crypto.SecureUtil;

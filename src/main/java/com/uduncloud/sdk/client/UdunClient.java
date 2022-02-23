@@ -1,14 +1,14 @@
-package com.udun.sdk.client;
+package com.uduncloud.sdk.client;
 
 import cn.hutool.core.lang.Console;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.http.HttpStatus;
 import cn.hutool.json.JSONUtil;
-import com.udun.sdk.constant.ApiPath;
-import com.udun.sdk.domain.Address;
-import com.udun.sdk.domain.Coin;
-import com.udun.sdk.domain.ResultMsg;
-import com.udun.sdk.util.UdunUtils;
+import com.uduncloud.sdk.constant.ApiPath;
+import com.uduncloud.sdk.domain.Address;
+import com.uduncloud.sdk.domain.Coin;
+import com.uduncloud.sdk.domain.ResultMsg;
+import com.uduncloud.sdk.util.UdunUtils;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
@@ -87,12 +87,12 @@ public class UdunClient implements UdunApi {
     }
 
     @Override
-    public ResultMsg proxyPay(String address, BigDecimal amount, String mainCoinType, String coinType, String businessId, String memo) {
-        return proxyPay(address, amount, mainCoinType, coinType, businessId, memo, defaultCallBackUrl);
+    public ResultMsg autoWithdraw(String address, BigDecimal amount, String mainCoinType, String coinType, String businessId, String memo) {
+        return autoWithdraw(address, amount, mainCoinType, coinType, businessId, memo, defaultCallBackUrl);
     }
 
     @Override
-    public ResultMsg proxyPay(String address, BigDecimal amount, String mainCoinType, String coinType, String businessId, String memo, String callUrl) {
+    public ResultMsg autoWithdraw(String address, BigDecimal amount, String mainCoinType, String coinType, String businessId, String memo, String callUrl) {
         Map<String, Object> params = new HashMap<>();
         params.put("address", address);
         params.put("amount", amount);

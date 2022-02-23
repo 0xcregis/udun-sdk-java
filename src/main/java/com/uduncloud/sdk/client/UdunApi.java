@@ -1,8 +1,8 @@
-package com.udun.sdk.client;
+package com.uduncloud.sdk.client;
 
-import com.udun.sdk.domain.Address;
-import com.udun.sdk.domain.Coin;
-import com.udun.sdk.domain.ResultMsg;
+import com.uduncloud.sdk.domain.Address;
+import com.uduncloud.sdk.domain.Coin;
+import com.uduncloud.sdk.domain.ResultMsg;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -76,7 +76,7 @@ public interface UdunApi {
      * @param memo         备注,XRP和EOS，这两种币的提币申请该字段可选，其他类型币种不填
      * @return 返回信息
      */
-    ResultMsg proxyPay(String address, BigDecimal amount, String mainCoinType, String coinType, String businessId, String memo);
+    ResultMsg autoWithdraw(String address, BigDecimal amount, String mainCoinType, String coinType, String businessId, String memo);
 
     /**
      * 代付，回调地址自定义
@@ -90,7 +90,7 @@ public interface UdunApi {
      * @param callUrl      回调地址
      * @return 返回信息
      */
-    ResultMsg proxyPay(String address, BigDecimal amount, String mainCoinType, String coinType, String businessId, String memo, String callUrl);
+    ResultMsg autoWithdraw(String address, BigDecimal amount, String mainCoinType, String coinType, String businessId, String memo, String callUrl);
 
     /**
      * 检验地址合法性

@@ -1,3 +1,4 @@
+[![Maven Package](https://github.com/uduncloud/udun-sdk-java/actions/workflows/maven-publish.yml/badge.svg?event=status)](https://github.com/uduncloud/udun-sdk-java/actions/workflows/maven-publish.yml)
 ## 一、说明
 - 该SDK是对 https://www.uduncloud.com/geteway-interface api接口文档的Java版封装，如有疑问，可咨询官网客服
 

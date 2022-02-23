@@ -1,7 +1,7 @@
-import com.udun.sdk.client.UdunClient;
-import com.udun.sdk.domain.Address;
-import com.udun.sdk.domain.Coin;
-import com.udun.sdk.domain.ResultMsg;
+import com.uduncloud.sdk.client.UdunClient;
+import com.uduncloud.sdk.domain.Address;
+import com.uduncloud.sdk.domain.Coin;
+import com.uduncloud.sdk.domain.ResultMsg;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -32,7 +32,7 @@ public class UdunclientDemo {
                 "42423121", "");
         System.out.println(withdrawResult2);
         //代付
-        ResultMsg proxyPayResult = udunClient.proxyPay("0xa09921e9a3886e1b2b79e8fcd27d3a61ebe0ecd9", BigDecimal.TEN,
+        ResultMsg proxyPayResult = udunClient.autoWithdraw("0xa09921e9a3886e1b2b79e8fcd27d3a61ebe0ecd9", BigDecimal.TEN,
                 "520", "520",
                 "42423121", "", "http://demo.com/notify");
         System.out.println(proxyPayResult);

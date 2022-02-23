@@ -1,4 +1,4 @@
-package com.udun.sdk.constant;
+package com.uduncloud.sdk.constant;
 
 public class ApiPath {
     public final static String CREATE_ADDRESS = "/mch/address/create";

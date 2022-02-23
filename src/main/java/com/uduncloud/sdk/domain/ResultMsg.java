@@ -1,4 +1,4 @@
-package com.udun.sdk.domain;
+package com.uduncloud.sdk.domain;
 
 public class ResultMsg {
     private Integer code;

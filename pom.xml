@@ -23,8 +23,8 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub OWNER Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/uduncloud/udun-sdk-java</url>
+            <name>GitHub Uduncloud Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/uduncloud/udun-sdk</url>
         </repository>
     </distributionManagement>
 

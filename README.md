@@ -1,5 +1,5 @@
-[![Build Maven Package](https://github.com/uduncloud/udun-sdk-java/actions/workflows/maven-publish.yml/badge.svg)](https://github.com/uduncloud/udun-sdk-java/actions/workflows/maven-publish.yml)
-
+[![Build](https://github.com/uduncloud/udun-sdk-java/actions/workflows/maven-publish.yml/badge.svg)](https://github.com/uduncloud/udun-sdk-java/actions/workflows/maven-publish.yml)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/uduncloud/udun-sdk-java)
 ## 一、说明
 - 该SDK是对 https://www.uduncloud.com/geteway-interface api接口文档的Java版封装，如有疑问，可咨询官网客服
 

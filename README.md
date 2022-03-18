@@ -31,7 +31,7 @@
 </dependency>
 ```
 
-3. 具体用法参考 https://github.com/uduncloud/java-wallet-sdk/blob/main/src/test/java/UdunclientDemo.java
+3. 具体用法参考 https://github.com/uduncloud/java-wallet-sdk/blob/main/src/test/java/UdunClientDemo.java
 4. 所有支持方法参考 https://github.com/uduncloud/java-wallet-sdk/blob/main/src/main/java/com/udun/sdk/client/UdunApi.java
 
 ## 三、关于回调

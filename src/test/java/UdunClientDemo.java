@@ -6,7 +6,7 @@ import com.uduncloud.sdk.domain.ResultMsg;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class UdunclientDemo {
+public class UdunClientDemo {
     public static void main(String[] args) {
         //初始化
         UdunClient udunClient = new UdunClient("https://hd03-node.uduncloud.com",

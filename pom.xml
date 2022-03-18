@@ -62,16 +62,10 @@
 
     <distributionManagement>
         <repository>
-            <id>github</id>
-            <name>GitHub Uduncloud Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/uduncloud/udun-sdk-java</url>
-        </repository>
-        <!--<repository>
             <id>ossrh</id>
             <name>Maven Central Packages</name>
             <url>https://s01.oss.sonatype.org/content/repositories/releases/</url>
-        </repository>-->
-
+        </repository>
     </distributionManagement>
 
 </project>

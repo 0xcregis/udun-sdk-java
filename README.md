@@ -5,7 +5,9 @@
 
 
 ## 通过maven安装
-Udun-SDK的构建包已经托管在中央仓库里，直接在项目pom.xml里添加依赖即可,当前最新Release版本为***2.1.2***
+Udun-SDK的构建包已经托管在中央仓库里，直接在项目里添加依赖即可,当前最新Release版本为***2.1.2***
+
+1. Maven引用
 ```xml
 <dependency>
     <groupId>com.uduncloud</groupId>
@@ -13,7 +15,10 @@ Udun-SDK的构建包已经托管在中央仓库里，直接在项目pom.xml里�
     <version>2.1.2</version>
 </dependency>
 ```
-
+2. Gradle引用
+```groovy
+implementation group: 'com.uduncloud', name: 'udun-sdk', version: '2.1.2'
+```
 ## 通过源码安装
 1. 下载源码
 ```shell
@@ -35,4 +40,4 @@ mvn -Dmaven.test.skip=true clean install
 - [回调调试工具](https://www.uduncloud.com/debug-monitor) 
 
 ## Support
-如果您遇到使用问题，请提交本工程的Issue，会有技术人员及时响应。或者你想咨询有经验的开发者，可以加入我们的Telegram技术交易群：[UdunDeveloperCommunity](https://t.me/UdunWalletDevs)
+如果您遇到使用问题，请提交本工程的Issue，会有技术人员及时响应。或者你想咨询有经验的开发者，可以加入我们的Telegram技术交流群：[UdunDeveloperCommunity](https://t.me/UdunWalletDevs)

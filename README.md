@@ -1,11 +1,13 @@
 [![Build](https://github.com/uduncloud/udun-sdk-java/actions/workflows/maven-publish.yml/badge.svg)](https://github.com/uduncloud/udun-sdk-java/actions/workflows/maven-publish.yml)
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/uduncloud/udun-sdk-java)
 ## Udun-SDK-Java
->该SDK是对[API接口](https://www.uduncloud.com/geteway-interface) 的Java版封装
+>该SDK是对[UDUN API接口](https://www.uduncloud.com/geteway-interface) 的Java版封装
 
-
-## 通过maven安装
-Udun-SDK的构建包已经托管在中央仓库里，直接在项目里添加依赖即可,当前最新Release版本为***2.1.2***
+## 版本要求
+* 最低版本：JDK 1.8
+* 推荐版本：JDK 11
+## 安装
+Udun-SDK的构建包已经托管在中央仓库里，直接在项目里添加依赖即可,当前最新Release版本是**v2.1.2**
 
 1. Maven引用
 ```xml
@@ -19,7 +21,7 @@ Udun-SDK的构建包已经托管在中央仓库里，直接在项目里添加依
 ```groovy
 implementation group: 'com.uduncloud', name: 'udun-sdk', version: '2.1.2'
 ```
-## 通过源码安装
+## 源码编译
 1. 下载源码
 ```shell
 git clone https://github.com/uduncloud/udun-sdk-java.git
@@ -39,5 +41,5 @@ mvn -Dmaven.test.skip=true clean install
 - [回调接口参考写法](https://github.com/uduncloud/udun-sdk-java-demo/blob/main/src/main/java/com/udun/sdk/controller/CallBackController.java)
 - [回调调试工具](https://www.uduncloud.com/debug-monitor) 
 
-## Support
+## 技术支持
 如果您遇到使用问题，请提交本工程的Issue，会有技术人员及时响应。或者你想咨询有经验的开发者，可以加入我们的Telegram技术交流群：[UdunDeveloperCommunity](https://t.me/UdunWalletDevs)

@@ -5,16 +5,15 @@
 
 ## 版本要求
 * 最低版本：JDK 1.8
-* 推荐版本：JDK 11
 ## 安装
-Udun-SDK的构建包已经托管在中央仓库里，直接在项目里添加依赖即可,当前最新Release版本是**v2.1.3**
+Udun-SDK的构建包已经托管在中央仓库里，直接在项目里添加依赖即可,当前最新Release版本是**v2.1.4**
 
 1. Maven引用
 ```xml
 <dependency>
     <groupId>com.uduncloud</groupId>
     <artifactId>udun-sdk</artifactId>
-    <version>2.1.3</version>
+    <version>2.1.4</version>
 </dependency>
 ```
 2. Gradle引用

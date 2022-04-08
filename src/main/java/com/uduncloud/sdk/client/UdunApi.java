@@ -3,6 +3,7 @@ package com.uduncloud.sdk.client;
 import com.uduncloud.sdk.domain.Address;
 import com.uduncloud.sdk.domain.Coin;
 import com.uduncloud.sdk.domain.ResultMsg;
+import com.uduncloud.sdk.exception.UdunException;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -14,7 +15,7 @@ public interface UdunApi {
      * @param mainCoinType 主币种编号,使用获取商户币种信息接口
      * @return 地址
      */
-    Address createAddress(String mainCoinType);
+    Address createAddress(String mainCoinType)  throws UdunException;
 
     /**
      * 创建币种地址，别名和钱包编号自定义，回调地址使用统一配置
@@ -24,7 +25,7 @@ public interface UdunApi {
      * @param walletId     钱包编号
      * @return 地址
      */
-    Address createAddress(String mainCoinType, String alias, String walletId);
+    Address createAddress(String mainCoinType, String alias, String walletId)  throws UdunException;
 
     /**
      * 创建币种地址，别名和钱包编号自定义，回调地址自定义
@@ -35,7 +36,7 @@ public interface UdunApi {
      * @param callUrl      回调地址
      * @return 地址
      */
-    Address createAddress(String mainCoinType, String alias, String walletId, String callUrl);
+    Address createAddress(String mainCoinType, String alias, String walletId, String callUrl) throws UdunException;
 
 
     /**

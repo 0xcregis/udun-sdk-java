@@ -5,14 +5,26 @@ import cn.hutool.crypto.SecureUtil;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import cn.hutool.json.JSONUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class UdunUtils {
+    private static Logger logger = LoggerFactory.getLogger(UdunUtils.class);
+
     public static String post(String gateway, String merchantKey, String path, String body) {
-        HttpResponse response = HttpRequest.post(gateway + path).body(parseParams(merchantKey, body)).execute();
-        return response.body();
+        String rawBody = parseParams(merchantKey, body);
+        logger.debug("HttpRequest POST {}",gateway+path);
+        logger.debug("BODY {}",rawBody);
+        HttpResponse response = HttpRequest.post(gateway + path)
+                .body(rawBody)
+                .execute();
+        String resp =  response.body();
+        logger.debug("HttpResponse {}",resp);
+        return resp;
     }
 
     public static String parseParams(String merchantKey, String body) {

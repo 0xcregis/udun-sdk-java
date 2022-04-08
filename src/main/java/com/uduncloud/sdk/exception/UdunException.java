@@ -1,10 +1,10 @@
 package com.uduncloud.sdk.exception;
 
-public class CustomException extends RuntimeException {
+public class UdunException extends RuntimeException {
     private Integer code;
     private String message;
 
-    public CustomException(Integer code, String message) {
+    public UdunException(Integer code, String message) {
         this.code = code;
         this.message = message;
     }

@@ -8,7 +8,10 @@ import com.uduncloud.sdk.constant.ApiPath;
 import com.uduncloud.sdk.domain.Address;
 import com.uduncloud.sdk.domain.Coin;
 import com.uduncloud.sdk.domain.ResultMsg;
+import com.uduncloud.sdk.exception.UdunException;
 import com.uduncloud.sdk.util.UdunUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
@@ -16,20 +19,25 @@ import java.util.List;
 import java.util.Map;
 
 public class UdunClient implements UdunApi {
+    private static Logger logger = LoggerFactory.getLogger(UdunClient.class);
+
     /**
-     * 网关
+     * UDUN API Gateway
      */
     private final String gateway;
+
     /**
-     * 商户编号
+     * UDUN Merchant Number
      */
     private final String merchantId;
+
     /**
-     * 商户key
+     * UDUN Merchant Key
      */
     private final String merchantKey;
+
     /**
-     * 默认回调地址
+     * Callback to business system
      */
     private final String defaultCallBackUrl;
 
@@ -41,17 +49,17 @@ public class UdunClient implements UdunApi {
     }
 
     @Override
-    public Address createAddress(String mainCoinType) {
+    public Address createAddress(String mainCoinType)  throws UdunException{
         return createAddress(mainCoinType, "", "", defaultCallBackUrl);
     }
 
     @Override
-    public Address createAddress(String mainCoinType, String alias, String walletId) {
+    public Address createAddress(String mainCoinType, String alias, String walletId)  throws UdunException{
         return createAddress(mainCoinType, alias, walletId, defaultCallBackUrl);
     }
 
     @Override
-    public Address createAddress(String mainCoinType, String alias, String walletId, String callUrl) {
+    public Address createAddress(String mainCoinType, String alias, String walletId, String callUrl) throws UdunException{
         Map<String, String> params = new HashMap<>();
         params.put("merchantId", merchantId);
         params.put("coinType", mainCoinType);
@@ -61,8 +69,8 @@ public class UdunClient implements UdunApi {
 
         ResultMsg result = JSONUtil.toBean(UdunUtils.post(gateway, merchantKey, ApiPath.CREATE_ADDRESS, StrUtil.format("[{}]", JSONUtil.toJsonStr(params))), ResultMsg.class);
         if (result.getCode() != HttpStatus.HTTP_OK) {
-            Console.error(JSONUtil.toJsonStr(result));
-            return null;
+            logger.error("createAddress:{}",JSONUtil.toJsonStr(result));
+            throw new UdunException(result.getCode(), result.getMessage());
         }
         return JSONUtil.toBean(result.getData(), Address.class);
     }
